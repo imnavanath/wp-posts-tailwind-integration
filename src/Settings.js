@@ -1,19 +1,3 @@
-/*
-  This example requires Tailwind CSS v2.0+
-
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { SearchIcon } from '@heroicons/react/solid'
@@ -224,7 +208,7 @@ export default function Example() {
         <main className="-mt-32">
           <div className="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-lg shadow px-5 py-6 sm:px-6">
-              <div className="h-96 border-4 border-dashed border-gray-200 rounded-lg">
+              <div className="h-100 overflow-y-scroll rounded-lg">
 			  		<List />
 				</div>
             </div>

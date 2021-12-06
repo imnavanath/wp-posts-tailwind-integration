@@ -1,13 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
 
-export default function Fetchposts( url ) {
+/** Getting posts data based on REST_API. */
+export default function Fetchposts( restUrl ) {
     const [data, setData] = useState( null );
 
     useEffect(() => {
         async function loadData() {
-            const response = await fetch( url );
+            const response = await fetch( restUrl );
             if( ! response.ok ) {
-                // oups! something went wrong
+                // oops! something went wrong.
                 return;
             }
 
@@ -16,7 +17,7 @@ export default function Fetchposts( url ) {
         }
 
         loadData();
-    }, [ url ]);
+    }, [ restUrl ]);
 
     return data;
 }

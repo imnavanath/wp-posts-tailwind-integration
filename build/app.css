@@ -577,40 +577,6 @@ a:focus{
   box-shadow:none
 }
 
-.container{
-  width:100%
-}
-
-@media (min-width: 640px){
-  .container{
-    max-width:640px
-  }
-}
-
-@media (min-width: 768px){
-  .container{
-    max-width:768px
-  }
-}
-
-@media (min-width: 1024px){
-  .container{
-    max-width:1024px
-  }
-}
-
-@media (min-width: 1280px){
-  .container{
-    max-width:1280px
-  }
-}
-
-@media (min-width: 1536px){
-  .container{
-    max-width:1536px
-  }
-}
-
 .sr-only{
   position:absolute;
   width:1px;
@@ -728,10 +694,6 @@ a:focus{
 
 .h-16{
   height:4rem
-}
-
-.h-96{
-  height:24rem
 }
 
 .min-h-full{
@@ -920,6 +882,10 @@ a:focus{
   overflow-x:auto
 }
 
+.overflow-y-scroll{
+  overflow-y:scroll
+}
+
 .whitespace-nowrap{
   white-space:nowrap
 }
@@ -936,8 +902,8 @@ a:focus{
   border-radius:9999px
 }
 
-.border-4{
-  border-width:4px
+.border-2{
+  border-width:2px
 }
 
 .border{
@@ -1055,11 +1021,6 @@ a:focus{
   padding-right:1.25rem
 }
 
-.px-6{
-  padding-left:1.5rem;
-  padding-right:1.5rem
-}
-
 .py-1{
   padding-top:0.25rem;
   padding-bottom:0.25rem
@@ -1098,6 +1059,10 @@ a:focus{
   padding-top:1rem
 }
 
+.pr-0{
+  padding-right:0px
+}
+
 .pr-3{
   padding-right:0.75rem
 }
@@ -1116,6 +1081,10 @@ a:focus{
 
 .pl-3{
   padding-left:0.75rem
+}
+
+.pl-6{
+  padding-left:1.5rem
 }
 
 .pl-10{
@@ -1444,6 +1413,14 @@ a:focus{
   .lg\:px-8{
     padding-left:2rem;
     padding-right:2rem
+  }
+
+  .lg\:pr-0{
+    padding-right:0px
+  }
+
+  .lg\:pl-8{
+    padding-left:2rem
   }
 }
 
