@@ -1,0 +1,21 @@
+.toplevel_page_tailwind_init #wpcontent {
+	padding-left: 0;
+}
+#search {
+	padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	img {
+	  border-width: 0;
+	}
+
+	a:focus {
+		outline: none;
+		box-shadow: none;
+	}
+}
