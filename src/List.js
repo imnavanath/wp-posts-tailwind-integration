@@ -59,8 +59,8 @@ export default function List() {
 							</div>
 							</td>
 							<td className="px-4 py-4 whitespace-nowrap">
-								<div className="text-sm text-gray-900">Publish - { post.date }</div>
-								<div className="text-sm text-gray-500">Last Modified - { post.modified }</div>
+								<div className="text-sm text-gray-900">Published - { post.date }</div>
+								<div className="text-sm text-gray-500">Updated - { post.modified }</div>
 							</td>
 							<td className="px-4 py-4 whitespace-nowrap">
 								<div className="text-sm text-gray-900"> { post._embedded['wp:term']['0']['0'] && post._embedded['wp:term']['0']['0'].name } </div>
